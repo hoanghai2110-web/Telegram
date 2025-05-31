@@ -24,7 +24,7 @@ jobs:
         run: ./gradlew assembleRelease
 
       - name: Lưu file APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: release-apk
           path: '**/release/*.apk'
